@@ -8,9 +8,21 @@ jobs:
   bash-script:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Comprovació del Codi
         uses: actions/checkout@v5
         
       - name: Executa script nova línia
         run: bash ./scripts/novalinia.sh
+
+      - name: Commit i push
+        uses: offensive-vk/auto-commit-push@v8
+        with:
+          name: 'Raül Valls Aranda'
+          email: 'r.vallsaranda@edu.gva.es'
+          message: 'Nova línia execució'
+          branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
