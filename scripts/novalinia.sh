@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "Execució" >> ../fitxerExecucions.txt
+touch fitxer.txt
 cat ../fitxerExecucions.txt
-echo "Executat"
+echo "Executat script novalinia.sh"
