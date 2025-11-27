@@ -20,8 +20,9 @@ html{
     width:60%;
     margin: 10px auto;
     padding:20px;
-    border:solid 1px blue;
-    color:blue;
+    border:solid 3px rgb(255, 0, 0);
+    border-radius: 20px;;
+    color:red;
     font-weight: bold;
     text-align:center;
     background-color:white;
