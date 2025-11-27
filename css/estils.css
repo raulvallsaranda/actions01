@@ -10,7 +10,8 @@ html{
     width:80%;
     margin: 10px auto;
     padding:20px;
-    border:solid 1px black;
+    border:solid 5px black;
+    border-radius: 20px;
     text-align:center;
     background-color:rgb(171, 221, 169);
 }
@@ -29,7 +30,8 @@ html{
     width:80%;
     margin: 10px auto;
     padding:20px;
-    border:solid 1px black;
+    border:solid 5px black;
+    border-radius: 20px;
     text-align:center;
     background-color:rgb(171, 221, 169);
 }
@@ -38,7 +40,8 @@ html{
     width:60%;
     margin: 10px auto;
     padding:20px;
-    border:solid 1px blue;
+    border:solid 5px blue;
+    border-radius: 20px;
     color:blue;
     font-weight: bold;
     text-align:center;
@@ -49,7 +52,8 @@ html{
     width:80%;
     margin: 10px auto;
     padding:20px;
-    border:solid 1px black;
+    border:solid 5px black;
+    border-radius: 20px;
     text-align:center;
     background-color:rgb(171, 221, 169);
 }
