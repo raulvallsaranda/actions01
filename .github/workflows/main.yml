@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v5
         
       - name: Executa script nova línia
-        run: bash scripts/novalinia.sh
+        run: bash ./scripts/novalinia.sh
