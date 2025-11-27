@@ -15,16 +15,22 @@ jobs:
       - name: Comprovació del Codi
         uses: actions/checkout@v5
         
-      - name: Executa script nova línia
+      - name: Executa codi bash
         run: |
-          echo "HOla" >> fitxerExecucions.txt   
-#        run: bash ./scripts/novalinia.sh
+          echo "Executat "`date` >> fitxerExecucions.txt   
+      - name: commit i push
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add --all
+          git commit -m "Afegit contingut fitxer fitxerExecucions.txt"
+          git push
 
-      - name: Commit i push
-        uses: offensive-vk/auto-commit-push@v8
-        with:
-          name: 'Raül Valls Aranda'
-          email: 'r.vallsaranda@edu.gva.es'
-          message: 'Nova línia execució'
-          branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Commit i push
+#        uses: offensive-vk/auto-commit-push@v8
+#        with:
+#          name: 'Raül Valls Aranda'
+#          email: 'r.vallsaranda@edu.gva.es'
+#          message: 'Nova línia execució'
+#          branch: main
+#          github-token: ${{ secrets.GITHUB_TOKEN }}
