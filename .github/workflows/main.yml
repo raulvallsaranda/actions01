@@ -1,0 +1,16 @@
+name : Fitxers
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Comprovació del Codi
+        uses: actions/checkout@v5
+        
+      - name: Executa script nova línia
+        run: bash scripts/novalinia.sh
